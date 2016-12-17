@@ -82,6 +82,7 @@
     "helmet": "^1.1.0",
     "html-minifier": "^1.2.0",
     "isomorphic-fetch": "^2.2.1",
+    "join-classnames": "^1.0.0",
     "npm-run-all": "^1.5.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",

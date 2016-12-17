@@ -1,0 +1,60 @@
+.link {
+    background-image: url("./images/link.png");
+}
+
+.actor {
+    height: 130px;
+    width: 7.5em;
+}
+
+.walking {
+    animation: walk .8s steps(10) infinite;
+}
+
+.standing {
+    animation: standing steps(2) 3s infinite;
+}
+
+.image {
+
+}
+
+.south {
+    background-position-y: 520px;
+    &.standing {
+        background-position-y: 1040px;
+    }
+}
+
+.west {
+    background-position-y: 390px;
+    &.standing {
+        background-position-y: 910px;
+    }
+}
+
+.north {
+    background-position-y: 260px;
+    &.standing {
+        background-position-y: 780px;
+    }
+}
+
+.east {
+    background-position-y: 130px;
+    &.standing {
+        background-position-y: 650px;
+    }
+}
+
+@keyframes walk {
+   from { background-position-x:    0px; }
+   to { background-position-x: -1200px; }
+}
+
+@keyframes standing {
+   from { background-position-x: 0px; }
+   80%  { background-position-x: 0px; }
+   90%  { background-position-x: -240px; }
+   to   { background-position-x: 0px; }
+}

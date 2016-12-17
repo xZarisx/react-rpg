@@ -1,6 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-
+import styles from './Map.css';
 
 export default class Map extends React.Component {
 
@@ -38,18 +37,14 @@ export default class Map extends React.Component {
     }
 
     render() {
-        const {playerMovement} = this.props;
+        const { map } = this.props;
         return (
-            <div>
-            <Helmet title="Map" />
-            {
-                Object.keys(playerMovement).map((actor, i)=>(
-                    <span key={i}>
-                    <h1>{actor}</h1>
-                    <p>x: {playerMovement[actor].x} y: {playerMovement[actor].y} </p>
-                    </span>
-                ))
-            }
+            <div className={styles.map}>
+                {
+                    map.map((item, i) => (
+                        <div className={styles.mapItem} key={i} style={{bottom: item.y * 10, right: item.x * 10}}>{item.title}</div>
+                    ))
+                }
             </div>
         )
     }

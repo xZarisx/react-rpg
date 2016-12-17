@@ -5,7 +5,7 @@ export const MOVE_RIGHT = Symbol('MOVE_RIGHT');
 export const MOVE_LEFT = Symbol('MOVE_LEFT');
 
 
-export default function playerMovement( state = { player: { x: 0, y: 0 } }, { type, actor, x, y } ) {
+export default function actorMovement( state = [ { title: 'player', location: { x: 0, y: 0 } } ], { type, actor, x, y } ) {
     switch(type) {
         case SET_LOCATION:
             return { [actor]: { x, y } };

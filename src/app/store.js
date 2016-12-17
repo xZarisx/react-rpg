@@ -2,14 +2,14 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 import people from './reducers/people.js';
-import playerMovement from './reducers/playerMovement.js';
+import actorLocations from './reducers/actorLocations.js';
 import nav from './reducers/site-nav.js';
 import {isBrowser} from './env.js';
 
 
 
 // create the master reducer
-const rootReducer = combineReducers({ people, nav, playerMovement });
+const rootReducer = combineReducers({ people, nav, map: actorLocations });
 
 
 // determine initial state

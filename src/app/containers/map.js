@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setLocation, moveUp, moveDown, moveRight, moveLeft } from '../actions/playerMovement.js';
+import { setLocation, moveUp, moveDown, moveRight, moveLeft } from '../actions/actorLocations.js';
 import Map from '../components/Map';
 // import mountLoad from '../lib/mount-load';
 // import {wrap} from '../lib/ss-resolve';
@@ -11,8 +11,7 @@ import Map from '../components/Map';
 // const ServerLoadedComponent = wrap(LazyMap, resolveOnServer);
 
 
-const mapStateToProps = ({ playerMovement }) =>
-    ({ playerMovement });
+const mapStateToProps = ({ map }) => ({ map });
 
 const bindActionsToDispatch = {
     setLocation, moveUp, moveDown, moveRight, moveLeft
