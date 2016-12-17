@@ -12,7 +12,7 @@
 }
 
 .standing {
-    animation: standing steps(2) 3s infinite;
+    animation: standing steps(2) 6s infinite;
 }
 
 .image {
@@ -37,6 +37,7 @@
     background-position-y: 260px;
     &.standing {
         background-position-y: 780px;
+        animation: none;
     }
 }
 
@@ -54,7 +55,7 @@
 
 @keyframes standing {
    from { background-position-x: 0px; }
-   80%  { background-position-x: 0px; }
-   90%  { background-position-x: -240px; }
+   96%  { background-position-x: 0px; }
+   98%  { background-position-x: -240px; }
    to   { background-position-x: 0px; }
 }
