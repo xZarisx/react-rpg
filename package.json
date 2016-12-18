@@ -16,7 +16,9 @@
         "build:server": "better-npm-run build:server",
         "dev:client": "better-npm-run dev:client",
         "dev:server": "better-npm-run dev:server",
-        "story": "npm-run-all -p story:*"
+        "story": "npm-run-all -s story:*",
+        "story:build": "better-npm-run story:build",
+        "story:server": "better-npm-run story:server"
     },
     "betterScripts": {
         "dev:client": {
@@ -47,7 +49,7 @@
             "command": "build-storybook -o .out"
         },
         "story:server": {
-            "command": "http-server ./.out/index.html"
+            "command": "http-server ./.out/"
         }
     },
     "license": "MIT",
