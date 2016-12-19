@@ -7,7 +7,7 @@
         "predev": "npm run build",
         "dev": "npm-run-all -p dev:*",
         "build": "npm-run-all -p build:*",
-        "build-storybook": "build-storybook -o .out",
+        "build-storybook": "build-storybook -o .out && http-server ./.out/",
         "app": "node dist/server.js",
         "lint": "eslint src",
         "start": "start-storybook -p 9999",
@@ -46,10 +46,10 @@
             }
         },
         "story:build": {
-            "command": "build-storybook -o .out"
+            "command": "build-storybook -o demo"
         },
         "story:server": {
-            "command": "http-server ./.out/"
+            "command": "http-server ./demo/"
         }
     },
     "license": "MIT",

@@ -8,3 +8,4 @@ static/assets
 static/app.*
 server/modules/react-server-app
 /.out
+/demo
