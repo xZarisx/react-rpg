@@ -1,1 +1,1 @@
-web: npm run story
+web: npm run story:server
