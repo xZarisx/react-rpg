@@ -54,6 +54,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@kadira/storybook": "^1.28.1",
     "autoprefixer": "^6.1.2",
     "babel-cli": "^6.5.1",
     "babel-core": "^6.2.1",
@@ -84,7 +85,6 @@
     "webpack-node-externals": "^1.2.0"
   },
   "dependencies": {
-    "@kadira/storybook": "^1.28.1",
     "@kadira/storybook-deployer": "^1.2.0",
     "better-npm-run": "0.0.8",
     "classnames": "^2.2.1",
