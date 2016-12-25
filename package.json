@@ -71,6 +71,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
+    "node-pre-gyp": "^0.6.32",
     "normalize.css": "^4.1.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.1.2",
